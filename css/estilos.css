@@ -1,0 +1,40 @@
+body {background-image: url("../img/fondo.png");
+    color:white
+}
+h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+}
+.contenedor-principal {max-width: 1040px;
+    padding: 4rem;
+    background-color: rgba(39, 109, 133);
+    margin: 0 auto;
+}
+nav ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 16rem;
+  color: white;
+}
+nav ul li a {
+  padding: 1rem;
+  font-weight: 700;
+  background-color: rgba(7, 42, 64);
+  border: 0.2rem solid rgb(30, 73, 99);
+  text-decoration: none;
+  color:white;
+}
+nav ul li a:visited {
+  color: rgb(88, 88, 88);
+  text-decoration:none;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  background-color: rgb(30, 73, 99);
+  color:white;
+}
