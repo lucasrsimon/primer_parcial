@@ -1,24 +1,32 @@
-body {background-image: url("../img/fondo.png");
-    color:white
+/* 1. Estilo general */
+header {
+    padding: 1rem;
+    margin: 2rem;
 }
-h1 {
-  font-family: "Barlow", sans-serif;
-  font-weight: 700;
-  text-align: center;
-  display: inline-block;
-  vertical-align: top;
-  padding: 10px;
+body {background-image: url("../img/fondo.png");
+      color:white;
+      padding: 1rem;
+      margin: 2rem;
+}
+footer { padding: 3rem;
+         margin: 0.5rem;
+         margin-top:7rem;
+         background-color: rgba(7, 42, 64);
+
 }
 .contenedor-principal {max-width: 1040px;
     padding: 4rem;
     background-color: rgba(39, 109, 133);
     margin: 0 auto;
 }
+main {font-size: 1.2rem;
+}
+/* 2. Menu de navegación */
 nav ul{
   list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 16rem;
+  gap: 10rem;
   color: white;
 }
 nav ul li a {
@@ -28,13 +36,104 @@ nav ul li a {
   border: 0.2rem solid rgb(30, 73, 99);
   text-decoration: none;
   color:white;
+  border-radius: 0.5rem;
 }
 nav ul li a:visited {
-  color: rgb(88, 88, 88);
-  text-decoration:none;
+  border: 0.2rem solid rgba(7, 42, 64);
+  color: white;
+  text-decoration: none;
 }
 nav ul li a:hover {
   text-decoration: none;
   background-color: rgb(30, 73, 99);
   color:white;
+}
+/*3. Titulos*/
+h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem;
+  margin:1rem
+}
+/*4. imagenes*/
+img {border: 0.2rem solid rgba(7, 42, 64);}
+.rafael-lozano-hemmer {
+  display:block;
+  margin: 0 auto;
+  max-width: 90%;
+  margin-top:3rem;
+  border: 0.2rem solid rgba(7, 42, 64);
+}
+#imagenes-obras {
+  display: flex;            
+  justify-content: center;  
+  align-items: center;     
+  gap: 9rem;
+  width: 100%;
+}
+#imagenes-obras img {
+  max-width: 45%;
+  height: auto;
+  border: 0.2rem solid rgb(10, 34, 49);}
+/*5.Articulos*/
+article {
+  margin: 2rem;
+}
+/* 6. Parrafos*/
+p {
+  line-height: 1.6;
+}
+/*7. Listas*/
+ul {
+  list-style-type: square;
+  line-height:1.6;
+}
+/*Otros*/
+cite {
+  display: block;
+  text-align: center;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  background-color: rgba(73, 135, 173);
+}
+.contacto {
+  font-family: "Barlow", sans-serif;
+  background-color: rgba(73, 135, 173);
+  color:white;
+  margin-left: 0.5rem;
+  padding: 0.5em;
+  border-radius: 0.5rem;
+}
+.vida-obra {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+#arte-interactivo {
+  flex: 1;
+}
+#informacion-personal {
+  background-color: rgb(73, 135, 173);
+  margin-left:3rem;
+  margin-right: auto;
+  max-width:fit-content;
+  padding: 1rem;
+  border: 0.2rem solid rgb(10, 34, 49);
+  border-radius: 0.5rem;
+  flex: 0 0 25rem;
+  margin-top:10rem;
+}
+#informacion-personal ul {
+  list-style-type: none;
+  padding: 0.5rem;
+}
+iframe {
+  display: block;
+  margin: 2rem auto;
+  align-items: center;
+  border: 0.2rem solid rgb(10, 34, 49);
+  border-radius: 0.5rem;
 }
